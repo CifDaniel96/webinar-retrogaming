@@ -1,140 +1,212 @@
 /* Font */
 *.montserrat-main {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 48;
-    font-style: normal;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 48;
+font-style: normal;
 }
 h1, h2, h3, .h1, .h2, .h3{
-    
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    
+
+font-family: "Roboto", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+font-variation-settings:
+"wdth" 100;
+
 }
 /* Colori */
 :root{
-    --w: rgb(255, 255, 255);
-    --y: rgb(255, 255, 0);
-    --P: rgb(21, 14, 61);
-    
+--w: rgb(255, 255, 255);
+--y: rgb(255, 255, 0);
+--P: rgb(21, 14, 61);
+
 }
 .w-color{
-    color: var(--w);}
+color: var(--w);}
+
+.y-color{
+    color: var(--y);
+}
+.p-color{
+    color: var(--p);
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 100vh; 
+    background-image: url(./media/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+/* Logo */
+.logo-a{
+    width: 25%;
     
-    .y-color{
-        color: var(--y);
-    }
-    .p-color{
-        color: var(--p);
-    }
+}
+.t1{
+    font-size: medium;
+    width: 85%;
+    margin-top: 120px;
+    margin-bottom: 600px;
     
-    /* Header */
+    
+}
+.t2{
+    display: inline;
+    
+}
+.t3{
+    margin-left: 100px;
+    margin-bottom: 25px ;
+}
+/* Game Arcade */
+.game-arcade{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 32.5%;
+
+}
+/* Button */
+.button-custom {
+    height: 70px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    position: relative;
+    color: var(--y);
+    border: 2px solid var(--y);
+    border-radius: 30px;
+    font-size: 1rem;  
+}
+/* Section Basi */
+.s-basi{
+    height: 75vh;
+    width: 100%;
+    background-color: var(--P);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: -350px; 
+    z-index: 2;
+    position: relative;
+}
+.s-aulab {
+    height: 70vh;
+    background-color: var(--p);
+    width: 100%;
+    background-color: var(--P);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+/* Section Form */
+.s-form{
+    background-image: url(./media/bg-2.jpg);
+}
+.form-container {
+  background-color: var(--P);
+  color: var(--w);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-container h2 {
+  font-weight: 700;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.calendar-icon {
+  background-color: #ffe600;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--p);
+  font-size: 28px;
+}
+
+label {
+  margin-top: 15px;
+  color: #d682ff;
+  font-size: 14px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d682ff;
+  border-radius: 0;
+  color: white;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ffe600;
+  background-color: transparent;
+  color: white;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+.form-check-input:checked {
+  background-color: #ffe600;
+  border-color: #ffe600;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  width: 100%;
+  background-color: var(--y);
+  border: none;
+  color: var(--P);
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+
+@media only screen and (min-width: 992px){
+    
+    
     header{
-        width: 100%;
-        height: 150vh;
-        background-image: url(./media/bg-1.jpg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    /* Logo */
-    .logo-a{
-        width: 15%;
-    }
-    .t1{
-        font-size: medium;
-        width: 85%;
-        margin-top: 100px;
+        height: 165vh;
+        margin-top: auto;
+        margin-bottom: auto;
         
         
     }
-    .t2{
-        display: inline;
-    }
-    .t3{
-        margin-left: 100px;
-    }
-    /* Game Arcade */
-    .game-arcade{
-        position: absolute;
-        right: 100px;
-        top: 70px;
-        width: 32.5%;
-    }
-    /* Button */
-    .button-custom {
-        height: 70px;
-        width: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-        position: relative;
-        color: var(--y);
-        border: 2px solid var(--y);
-        border-radius: 30px;
-        font-size: 1rem;  
-    }
-    /* Section Basi */
-    .s-basi{
-        height: 85vh;
-        width: 209vh;
-        background-color: var(--P);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 80px;
-        
-        
-        
-    }
-    /* Section Form */
-    .s-form{
-        background-image: url(./media/bg-2.jpg);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 120px 0 0 0;
-        
-        
-    }
-    .t-form{
-        top: 50px;
-        font-size: 2rem;
-    }
-    .b-form{
-        background-color: var(--P);
-        border-radius: 3%;
-        margin-bottom: 30px;
-    }
-    .b-icon{
-        background-color: var(--y);
-    }
-    @media only screen and (min-width: 992px){
-        
-        
-        header{
-            height: 165vh;
-            margin-top: auto;
-            margin-bottom: auto;
-            
-            
-        }
-    }
-    .t3{
-        font-size: 2rem;
-    }
-    .t2{
-        font-size: 2rem;
-    }
-    .t1{
-        font-size: 1rem;
-    }
-    
+}
+.t3{
+    font-size: 2rem;
+}
+.t2{
+    font-size: 2rem;
+}
+.t1{
+    font-size: 1rem;
+}
