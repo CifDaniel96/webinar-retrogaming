@@ -79,12 +79,14 @@ header{
 }
 /* Section Basi */
 .s-basi{
-    height: 80vh;
-    width: 25vh;
-   
+    height: 85vh;
+    width: 226vh;
     background-color: var(--P);
-    display: grid;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    
 
     
 }
